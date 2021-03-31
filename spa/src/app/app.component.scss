@@ -1,0 +1,56 @@
+.yp-nav-link {
+  color: var(--yp-link-color-secondary);
+  font-size: 30px;
+  font-family: var(--yp-nav-link-font-family);
+}
+
+.yp-nav-link__text {
+  padding-left: 16px;
+}
+
+.yp-nav-link.yp-nav-link--active {
+  color: var(--yp-link-color-secondary--active);
+  background: #eee8f9;
+}
+
+.yp-app-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.yp-drawer-content {
+  padding: 16px 8px 0 8px;
+  transition: padding 0.4s;
+  height: calc(100% - 16px);
+}
+
+.yp-drawer-container {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+
+.yp-toolbar {
+  z-index: 2;
+  color: white;
+  background: linear-gradient(to right, rgb(106, 17, 203) 500px, rgb(37, 117, 252));
+  position: relative;
+}
+
+.yp-app-title {
+  font-family: var(--yp-app-title-font-family);
+  --font-size: 32px;
+  font-size: min(var(--font-size), 32px);
+  height: 2em;
+  line-height: 2em;
+  padding: 0 5px;
+  margin-left: 60px;
+  background-image: linear-gradient( 90deg, white, #609fd1);
+  color: transparent;
+  -webkit-background-clip: text;
+  overflow: hidden;
+}

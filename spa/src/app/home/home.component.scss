@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: all 1s;
+}
+
+.yp-home-article {
+  line-height: 2em;
+  margin: 50px;
+  font-size: 24px;
+  font-family: Knewave, Roboto, Arial, sans-serif;
+  color: #c05cc7;
+  transition: all 1s;
+}
+
+.yp-home-article-title {
+  font-family: Engagement,Roboto, Arial, sans-serif;
+  font-size: 53px;
+  color: #684884;
+}
+
+@media (max-width:800px) {
+  :host {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: normal;
+  }
+
+  .yp-home-article {
+    margin: 8px 8px;
+  }
+}
