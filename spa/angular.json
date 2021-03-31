@@ -74,7 +74,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "playlists-history-info:build"
+            "browserTarget": "playlists-history-info:build",
+            "servePath": "youtube-playlists-history"
           },
           "configurations": {
             "production": {
