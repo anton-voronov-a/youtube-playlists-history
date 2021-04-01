@@ -5,29 +5,30 @@
   transition: all 1s;
 }
 
+
+.yp-home-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .yp-home-article {
   line-height: 2em;
   margin: 50px;
-  font-size: 28px;
-  font-family: Aladin;
+  font-size: 24px;
+  font-family: Aladin, Roboto, Arial, sans-serif;
   color: #a4a78e;
   transition: all 1s;
 }
 
 .yp-home-article-title {
-  line-height: 1em;
-  font-family: Engagement,Roboto, Arial, sans-serif;
-  font-size: 42px;
-  color: #9a9880;
+  height: 24px;
+  font-family: Engagement, Roboto,Arial, sans-serif;
+  font-size: 46px;
+  color: #72726d;
+  font-weight: normal;
 }
 
 @media (max-width:800px) {
-  :host {
-    margin-top: 0;
-    flex-direction: column;
-    justify-content: normal;
-  }
-
   .yp-home-article {
     margin: 8px 8px;
   }
