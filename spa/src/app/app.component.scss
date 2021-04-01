@@ -25,7 +25,11 @@
   padding: 16px 8px 0 8px;
   transition: padding 0.4s;
   height: calc(100% - 16px);
+  background: linear-gradient(to right, #eefeed, #fcf0e2);
+  transition: all 1s;
 }
+
+
 
 .yp-drawer-container {
   flex: 1;
