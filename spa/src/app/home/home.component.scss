@@ -2,39 +2,5 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  transition: all 1s;
 }
 
-
-.yp-home-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.yp-home-article {
-  line-height: 2em;
-  margin: 50px;
-  font-size: 24px;
-  font-family: Aladin, Roboto, Arial, sans-serif;
-  color: #a4a78e;
-  transition: all 1s;
-}
-
-.yp-home-article-title {
-  height: 24px;
-  font-family: Engagement, Roboto,Arial, sans-serif;
-  font-size: 46px;
-  color: #72726d;
-  font-weight: normal;
-}
-
-@media (max-width:800px) {
-  .yp-home-article {
-    margin: 8px 8px;
-    color: #000000b5;
-  }
-
-  .yp-home-article-title {
-    color: black;
-  }
-}

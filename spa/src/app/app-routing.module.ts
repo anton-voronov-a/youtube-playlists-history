@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { HomeComponent } from "./home/home.component";
+import { PrivacyPolicyComponent } from "./privacy-policy/privacy-policy.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent, },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];

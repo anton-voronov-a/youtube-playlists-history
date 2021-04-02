@@ -23,3 +23,60 @@ app-root {
   width: 100%;
   flex-direction: column;
 }
+
+
+.yp-article {
+  line-height: 2em;
+  margin: 50px;
+  font-size: 24px;
+  font-family: Aladin, Roboto, Arial, sans-serif;
+  color: #a4a78e;
+  transition: all 1s;
+}
+
+.yp-article-title {
+  height: 24px;
+  font-family: Engagement, Roboto,Arial, sans-serif;
+  font-size: 46px;
+  color: #72726d;
+  font-weight: normal;
+}
+
+
+
+.yp-drawer-content {
+  padding: 16px 8px 0 8px;
+  transition: padding 0.4s;
+  height: calc(100% - 16px);
+  background: linear-gradient(to right,transparent 25%, #eefeed 75%, #fcf0e2);
+  transition: all 1s;
+  background-size: 400% 100%;
+  background-position-x: right;
+}
+
+.yp-drawer-content.mat-drawer-content {
+  height: calc(100% - 16px);
+}
+
+.yp-content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width:800px) {
+  .yp-article {
+    margin: 8px 8px;
+    color: #000000b5;
+  }
+
+  .yp-article-title {
+    color: black;
+    margin: 0;
+  }
+
+  .yp-drawer-content {
+    background-position-x: left;
+  }
+}
