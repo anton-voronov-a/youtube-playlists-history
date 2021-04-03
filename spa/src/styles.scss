@@ -50,12 +50,13 @@ app-root {
   transition: all 1s;
   height: calc(100% - 16px);
   background-image: var(--total-gradient);
-  background-size: max(100%, 1904px) max(100%, 929px);
+  --size: max(100%, 1904px) max(100%, 929px);
+  background-size: var(--size);
+  -webkit-background-size: var(--size);
+  -moz-background-size: var(--size);
+  -o-background-size: var(--size);
   background-position-x: center;
   background-position-y: center;
-  background-origin: padding-box;
-  background-clip: border-box;
-  background-attachment: scroll;
 }
 
 .yp-drawer-content.mat-drawer-content {
