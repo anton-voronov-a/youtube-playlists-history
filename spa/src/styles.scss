@@ -47,10 +47,10 @@ app-root {
   --radial-gradient: radial-gradient(#ffffff 0%, #9847ad00);
   --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
   padding: 16px 8px 0 8px;
-  transition: padding 0.4s;
+  transition: all 1s;
   height: calc(100% - 16px);
   background: var(--total-gradient);
-  background-size: max(100%, 1904px) max(100%, 929px);
+  background-size: max(100%, 1904px) calc(max(100%, 929px) + 100px);
   background-position-x: center;
 }
 
@@ -59,7 +59,7 @@ app-root {
 }
 
 .yp-content {
-  margin-top: 100px;
+  margin: 100px 8px 8px 8px;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -78,9 +78,16 @@ app-root {
 }
 
 @media (max-width:800px) {
+  .yp-drawer-content {
+    background-position-y: -100px;
+  }
 
   .yp-article-title {
     margin: 0;
+  }
+
+  .yp-article {
+    line-height: 1.5em;
   }
 
   .yp-content {
