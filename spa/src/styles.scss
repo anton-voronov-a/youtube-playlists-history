@@ -49,9 +49,10 @@ app-root {
   padding: 16px 8px 0 8px;
   transition: all 1s;
   height: calc(100% - 16px);
-  background: var(--total-gradient);
-  background-size: max(100%, 1904px) calc(max(100%, 929px) + 200px);
+  background-image: var(--total-gradient);
+  background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
+  background-position-y: center;
 }
 
 .yp-drawer-content.mat-drawer-content {
@@ -79,7 +80,7 @@ app-root {
 
 @media (max-width:800px) {
   .yp-drawer-content {
-    background-position-y: -100px;
+    background-size: max(100%, 1904px) 2000px;
   }
 
   .yp-article-title {
