@@ -47,14 +47,9 @@ app-root {
   --radial-gradient: radial-gradient(#ffffff 0%, #9847ad00);
   --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
   padding: 16px 8px 0 8px;
-  transition: all 1s;
   height: calc(100% - 16px);
   background-image: var(--total-gradient);
-  --size: max(100%, 1904px) max(100%, 929px);
-  background-size: var(--size);
-  -webkit-background-size: var(--size);
-  -moz-background-size: var(--size);
-  -o-background-size: var(--size);
+  background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
   background-position-y: center;
 }
@@ -84,7 +79,7 @@ app-root {
 
 @media (max-width:800px) {
   .yp-drawer-content {
-    background-size: max(100%, 1904px) 2000px;
+    background: white;
   }
 
   .yp-article-title {
