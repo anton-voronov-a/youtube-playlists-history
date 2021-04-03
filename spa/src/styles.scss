@@ -53,6 +53,9 @@ app-root {
   background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
   background-position-y: center;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-attachment: scroll;
 }
 
 .yp-drawer-content.mat-drawer-content {
