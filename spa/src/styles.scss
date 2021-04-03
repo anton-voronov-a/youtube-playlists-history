@@ -77,6 +77,21 @@ app-root {
   }
 }
 
+.yp-app-title {
+  font-family: var(--yp-app-title-font-family);
+  --font-size: 32px;
+  font-size: min(var(--font-size), 32px);
+  height: 2em;
+  line-height: 2em;
+  padding: 0 5px;
+  margin-left: 60px;
+  background-image: linear-gradient( 90deg, white, #609fd1);
+  color: transparent;
+  -webkit-background-clip: text;
+  overflow: hidden;
+  transition: margin 1s;
+}
+
 @media screen and (max-height:950px) {
   .yp-article {
     line-height: 1.5em;
@@ -95,5 +110,11 @@ app-root {
   .yp-article-title {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .yp-app-title {
+    margin-left: 8px;
   }
 }

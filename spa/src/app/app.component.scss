@@ -35,17 +35,3 @@
   background: linear-gradient(to right, rgb(106, 17, 203) 500px, rgb(37, 117, 252));
   position: relative;
 }
-
-.yp-app-title {
-  font-family: var(--yp-app-title-font-family);
-  --font-size: 32px;
-  font-size: min(var(--font-size), 32px);
-  height: 2em;
-  line-height: 2em;
-  padding: 0 5px;
-  margin-left: 60px;
-  background-image: linear-gradient( 90deg, white, #609fd1);
-  color: transparent;
-  -webkit-background-clip: text;
-  overflow: hidden;
-}
