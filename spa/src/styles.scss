@@ -49,7 +49,7 @@ app-root {
   padding: 16px 8px 0 8px;
   height: calc(100% - 16px);
   background-image: var(--total-gradient);
-  background-size: max(100%, 1904px) max(100%, 929px);
+  background-size: 1904px max(100%, 929px);
   background-position-x: center;
   background-position-y: center;
 }
@@ -77,20 +77,31 @@ app-root {
   }
 }
 
-@media (max-width:800px) {
-  .yp-drawer-content {
-    background: white;
-  }
-
-  .yp-article-title {
-    margin: 0;
-  }
-
+@media (max-height:950px) {
   .yp-article {
     line-height: 1.5em;
   }
 
   .yp-content {
     margin-top: 16px;
+  }
+}
+
+@media (max-height:800px) {
+  .yp-content {
+    margin-top: 16px;
+  }
+
+  .yp-article-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width:1904px) {
+
+  .yp-drawer-content {
+    /*max may not work*/
+    background-size: 1904px 929px;
   }
 }
