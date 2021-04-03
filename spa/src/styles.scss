@@ -42,12 +42,13 @@ app-root {
   transition: all 1s;
 }
 
-.yp-drawer-content {
+.yp-drawer-container {
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
   --linear-gradient: linear-gradient(90deg,#6a11cb,#2a6df8);
-  --radial-gradient: radial-gradient(#ffffff 0%, #9847ad00);
+  --radial-gradient: radial-gradient(at 50% 45%, #ffffff 0%, #9847ad00);
   --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
-  padding: 16px 8px 0 8px;
-  height: calc(100% - 16px);
   background-image: var(--total-gradient);
   background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
@@ -64,7 +65,11 @@ app-root {
   display: flex;
   flex-direction: column;
   transition: all 1s;
-  animation: yp-content-start 2s forwards;
+  animation: yp-content-start 0s forwards;
+}
+
+.yp-drawer-container--wide .yp-content {
+  animation: yp-content-start 1s forwards;
 }
 
 @keyframes yp-content-start {
@@ -96,20 +101,16 @@ app-root {
   .yp-article {
     line-height: 1.5em;
   }
-
   .yp-content {
-    margin-top: 16px;
+    margin-top: 7vh;
   }
 }
 
-@media screen and (max-height:800px) {
-  .yp-content {
-    margin-top: 16px;
-  }
+@media screen and (max-height:700px) {
 
   .yp-article-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 28px;
   }
 }
 
