@@ -28,7 +28,7 @@ app-root {
   line-height: 2em;
   font-size: 24px;
   font-family: Aladin, Roboto, Arial, sans-serif;
-  color: black;
+  color: #251482;
   transition: all 1s;
   animation: yp-article-start 2s forwards;
 }
@@ -37,18 +37,19 @@ app-root {
   height: 34px;
   font-family: Engagement, Roboto,Arial, sans-serif;
   font-size: 46px;
-  color: #ab09d2;
+  color: #ce2ec9;
   font-weight: normal;
   transition: all 1s;
 }
 
 .yp-drawer-content {
-  --linear-gradient: linear-gradient(to right, #f5c8f1, #5dd9f5);
-  --radial-gradient: radial-gradient(#ffffff 0%, #9847ad00),var(--linear-gradient);
+  --linear-gradient: linear-gradient(90deg,#6a11cb,#2a6df8);
+  --radial-gradient: radial-gradient(#ffffff 0%, #9847ad00);
+  --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
   padding: 16px 8px 0 8px;
   transition: padding 0.4s;
   height: calc(100% - 16px);
-  background: var(--radial-gradient);
+  background: var(--total-gradient);
   background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
 }
