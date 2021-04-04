@@ -29,8 +29,7 @@ app-root {
   font-size: 24px;
   font-family: Aladin, Roboto, Arial, sans-serif;
   color: #251482;
-  transition: all 1s;
-  animation: yp-article-start 2s forwards;
+  transition: line-height 1s;
 }
 
 .yp-article-title {
@@ -39,25 +38,23 @@ app-root {
   font-size: 46px;
   color: #ce2ec9;
   font-weight: normal;
-  transition: all 1s;
+  transition: margin 1s;
 }
 
 .yp-drawer-container {
   flex: 1;
   overflow-y: auto;
   height: 100%;
+}
+
+.yp-drawer-container.yp-drawer-container--wide {
   --linear-gradient: linear-gradient(90deg,#6a11cb,#2a6df8);
   --radial-gradient: radial-gradient(at 50% 45%, #ffffff 0%, #9847ad00);
   --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
   background-image: var(--total-gradient);
+  background-size: max(100%, 1904px) max(100%, 929px);
   background-position-x: center;
   background-position-y: center;
-  background-size: max(100%, 1904px) max(100%, 2000px);
-  transition: background-size 1s;
-}
-
-.yp-drawer-container.yp-drawer-container--wide {
-  background-size: max(100%, 1904px) max(100%, 929px);
 }
 
 .yp-drawer-content.mat-drawer-content {
@@ -69,7 +66,7 @@ app-root {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
-  transition: all 1s;
+  transition: opacity 1s, margin 1s;
   animation: yp-content-start 0s forwards;
 }
 
