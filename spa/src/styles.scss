@@ -45,7 +45,7 @@ app-root {
 }
 
 .yp-drawer-container--wide .yp-article-title {
-  font-size: 65px;
+  font-size: 46px;
 }
 
 .yp-drawer-container {
@@ -57,7 +57,7 @@ app-root {
 .yp-content {
   margin-top: max(53px, 50vh - 377px);
   padding: 0 8px;
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   transition: opacity 1s, margin 1s;

@@ -21,7 +21,7 @@ export class AppComponent {
   public isWide!: boolean;
 
   private update() {
-    this.isWide = window.innerWidth > 1200;
+    this.isWide = window.innerWidth > 1500;
   }
 
   public tryToggle(nav: MatDrawer) {
