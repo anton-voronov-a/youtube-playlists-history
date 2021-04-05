@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { MaterialModule } from "./material-module";
+import { HomeModule } from "./home/home.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MaterialModule } from "./material-module";
 
     MaterialModule,
 
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

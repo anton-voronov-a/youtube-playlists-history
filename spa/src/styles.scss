@@ -25,20 +25,28 @@ app-root {
 }
 
 .yp-article {
-  line-height: 2em;
-  font-size: 24px;
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-size: 27px;
   font-family: Aladin, Roboto, Arial, sans-serif;
   color: #251482;
-  transition: line-height 1s;
+  transition: font-size 1s;
+}
+
+.yp-drawer-container--wide .yp-article {
+  font-size: 29px;
 }
 
 .yp-article-title {
-  height: 34px;
-  font-family: Engagement, Roboto,Arial, sans-serif;
+  margin-bottom: 0.5em;
   font-size: 46px;
   color: #ce2ec9;
   font-weight: normal;
-  transition: margin 1s;
+  transition: font-size 1s;
+}
+
+.yp-drawer-container--wide .yp-article-title {
+  font-size: 65px;
 }
 
 .yp-drawer-container {
@@ -47,23 +55,9 @@ app-root {
   height: 100%;
 }
 
-.yp-drawer-container.yp-drawer-container--wide {
-  --linear-gradient: linear-gradient(90deg,#6a11cb,#2a6df8);
-  --radial-gradient: radial-gradient(at 50% 45%, #ffffff 0%, #9847ad00);
-  --total-gradient: var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--radial-gradient),var(--linear-gradient);
-  background-image: var(--total-gradient);
-  background-size: max(100%, 1904px) max(100%, 929px);
-  background-position-x: center;
-  background-position-y: center;
-}
-
-.yp-drawer-content.mat-drawer-content {
-  height: calc(100% - 16px);
-}
-
 .yp-content {
-  margin: 100px 8px 8px 8px;
-  max-width: 1000px;
+  padding: 0 8px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   transition: opacity 1s, margin 1s;
@@ -99,23 +93,6 @@ app-root {
   transition: margin 1s;
 }
 
-@media screen and (max-height:950px) {
-  .yp-article {
-    line-height: 1.5em;
-  }
-
-  .yp-content {
-    margin-top: 7vh;
-  }
-}
-
-@media screen and (max-height:700px) {
-
-  .yp-article-title {
-    margin-top: 0;
-    margin-bottom: 28px;
-  }
-}
 
 @media screen and (max-width:500px) {
   .yp-app-title {
