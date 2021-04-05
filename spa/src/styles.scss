@@ -25,7 +25,6 @@ app-root {
 }
 
 .yp-article {
-  margin-top: 1em;
   line-height: 1.5em;
   font-size: 27px;
   font-family: Aladin, Roboto, Arial, sans-serif;
@@ -38,7 +37,7 @@ app-root {
 }
 
 .yp-article-title {
-  margin-bottom: 0.6em;
+  margin: 0.5em 0;
   font-size: 46px;
   color: #ce2ec9;
   font-weight: normal;
@@ -56,6 +55,7 @@ app-root {
 }
 
 .yp-content {
+  margin-top: max(53px, 50vh - 377px);
   padding: 0 8px;
   max-width: 1400px;
   display: flex;
