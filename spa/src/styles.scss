@@ -32,13 +32,13 @@ app-root {
   text-align: justify;
 }
 
-.yp-title {
+.yp-homepage-title {
   font-family: "Kavoon";
   color: #ce2fc9;
   font-size: 42px;
 }
 
-.yp-article-title {
+.yp-title {
   color: #2e68f6;
   margin: 0.5em 0;
   font-size: 42px;
@@ -99,8 +99,9 @@ app-root {
 }
 
 @media screen and (min-width:800px) {
-  .yp-title {
+  .yp-homepage-title {
     font-size: 94px;
+    text-shadow: 0px 4px 4px #b18eab;
   }
 
   .yp-article {
