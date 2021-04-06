@@ -29,19 +29,22 @@ app-root {
   font-size: 27px;
   font-family: Aladin, Roboto, Arial, sans-serif;
   color: #251482;
-  transition: font-size 1s;
 }
 
 .yp-drawer-container--wide .yp-article {
   font-size: 29px;
 }
 
+.yp-title {
+  font-family: "Kavoon";
+  color: #ce2fc9;
+  font-size: 42px;
+}
+
 .yp-article-title {
   margin: 0.5em 0;
-  font-size: 46px;
-  color: #ce2ec9;
+  font-size: 42px;
   font-weight: normal;
-  transition: font-size 1s;
 }
 
 .yp-drawer-container {
@@ -51,7 +54,7 @@ app-root {
 }
 
 .yp-content {
-  margin-top: max(53px, 50vh - 377px);
+  margin-top: 40px;
   padding: 0 8px;
   max-width: 1200px;
   display: flex;
@@ -93,5 +96,11 @@ app-root {
 @media screen and (max-width:500px) {
   .yp-app-title {
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width:800px) {
+  .yp-title {
+    font-size: 94px;
   }
 }
