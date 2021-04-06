@@ -26,13 +26,10 @@ app-root {
 
 .yp-article {
   line-height: 1.5em;
-  font-size: 27px;
-  font-family: Aladin, Roboto, Arial, sans-serif;
-  color: #251482;
-}
-
-.yp-drawer-container--wide .yp-article {
-  font-size: 29px;
+  font-size: 20px;
+  font-family: Roboto, Arial,sans-serif;
+  color: #193782;
+  text-align: justify;
 }
 
 .yp-title {
@@ -42,9 +39,11 @@ app-root {
 }
 
 .yp-article-title {
+  color: #2e68f6;
   margin: 0.5em 0;
   font-size: 42px;
   font-weight: normal;
+  font-family: Aladin, Roboto, Arial, sans-serif;
 }
 
 .yp-drawer-container {
@@ -102,5 +101,9 @@ app-root {
 @media screen and (min-width:800px) {
   .yp-title {
     font-size: 94px;
+  }
+
+  .yp-article {
+    font-size: 23px;
   }
 }

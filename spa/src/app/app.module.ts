@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 import { MaterialModule } from "./material-module";
 import { HomeModule } from "./home/home.module";
+import { PrivacyPolicyModule } from "./privacy-policy/privacy-policy.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeModule } from "./home/home.module";
     MaterialModule,
 
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    PrivacyPolicyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
