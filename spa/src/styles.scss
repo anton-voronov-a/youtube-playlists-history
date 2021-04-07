@@ -28,7 +28,7 @@ app-root {
   line-height: 1.5em;
   font-size: 20px;
   font-family: Roboto, Arial,sans-serif;
-  color: #193782;
+  color: #5b5d61;
   text-align: justify;
 }
 
@@ -58,7 +58,6 @@ app-root {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  transition: opacity 1s, margin 1s;
   animation: yp-content-start 0s forwards;
 }
 
@@ -88,7 +87,6 @@ app-root {
   color: transparent;
   -webkit-background-clip: text;
   overflow: hidden;
-  transition: margin 1s;
 }
 
 
