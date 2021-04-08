@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@fontsource/aladin/latin-400.css",
+              "./node_modules/@fontsource/merienda/latin-400.css",
               "./node_modules/@fontsource/engagement/latin-400.css",
               "./node_modules/@fontsource/kavoon/latin-400.css",
               "./node_modules/material-icons/iconfont/material-icons.css",
