@@ -28,19 +28,17 @@ app-root {
   line-height: 1.5em;
   font-size: 20px;
   font-family: Roboto, Arial,sans-serif;
-  color: #5b5d61;
-  text-align: justify;
+  color: #403266;
 }
 
 .yp-homepage-title {
   font-family: "Kavoon";
-  color: #ce2fc9;
+  color: #765abf;
   font-size: 42px;
   font-weight: normal;
 }
 
 .yp-title {
-  color: #2e68f6;
   margin: 0.5em 0;
   font-size: 35px;
   font-weight: normal;
@@ -100,10 +98,19 @@ app-root {
 @media screen and (min-width:800px) {
   .yp-homepage-title {
     font-size: 94px;
-    text-shadow: 0px 4px 4px #b18eab;
   }
 
   .yp-article {
     font-size: 23px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .yp-article {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 }
