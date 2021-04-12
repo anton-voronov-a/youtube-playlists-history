@@ -24,7 +24,22 @@ app-root {
   flex-direction: column;
 }
 
-.yp-article {
+.yp-navigation-content {
+  animation: yp-navigation-content-start 0s forwards;
+  opacity: 0;
+}
+
+@keyframes yp-navigation-content-start {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.yp-section {
   line-height: 1.5em;
   font-size: 20px;
   font-family: Roboto, Arial,sans-serif;
@@ -36,6 +51,8 @@ app-root {
   color: #765abf;
   font-size: 42px;
   font-weight: normal;
+  line-height: 1em;
+  margin: 0.5em 0;
 }
 
 .yp-title {
@@ -57,20 +74,38 @@ app-root {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  animation: yp-content-start 0s forwards;
 }
 
-.yp-drawer-container--wide .yp-content {
-  animation: yp-content-start 1s forwards;
-}
-
-@keyframes yp-content-start {
-  0% {
+.yp-drawer-container--wide {
+  .yp-homepage-section {
+    animation: yp-navigation-content-start 1s forwards;
     opacity: 0;
   }
+  /*when not yp-drawer-container--wide already has animation from drawer*/
+  .yp-navigation-content {
+    animation-duration: 1s;
+  }
+  /*when not yp-drawer-container--wide already has animation from drawer*/
+  .yp-homepage-not-started.yp-navigation-content {
+    animation-duration: 0s;
+  }
 
-  100% {
-    opacity: 1;
+  .yp-homepage-not-started {
+    .yp-homepage-section {
+      animation-delay: 0.7s;
+    }
+
+    .yp-homepage-logo-char {
+      display: inline-block;
+      transform: scale(1) translateY(-30px) translateX(30px);
+      opacity: 0;
+    }
+
+    @for $i from 1 through 17 {
+      .yp-homepage-logo-char:nth-child(#{$i}) {
+        animation: char-start 1s #{$i*0.03}s forwards;
+      }
+    }
   }
 }
 
@@ -100,13 +135,32 @@ app-root {
     font-size: 94px;
   }
 
-  .yp-article {
+  .yp-section {
     font-size: 23px;
   }
 }
 
+.yp-homepage-logo-space {
+  width: 0.4em;
+  display: inline-block;
+}
+
+
+@keyframes char-start {
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 @media screen and (min-width:1200px) {
-  .yp-article {
+  .yp-section {
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
