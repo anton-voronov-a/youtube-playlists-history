@@ -85,12 +85,13 @@ app-root {
   .yp-navigation-content {
     animation-duration: 1s;
   }
-  /*when not yp-drawer-container--wide already has animation from drawer*/
-  .yp-homepage-not-started.yp-navigation-content {
-    animation-duration: 0s;
-  }
 
-  .yp-homepage-not-started {
+  .yp-not-navigated {
+    /*when not yp-drawer-container--wide already has animation from drawer*/
+    .yp-navigation-content {
+      animation-duration: 0s;
+    }
+
     .yp-homepage-section {
       animation-delay: 0.7s;
     }

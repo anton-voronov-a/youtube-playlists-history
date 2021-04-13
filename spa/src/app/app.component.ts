@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from "@angular/router";
 
 import { MatDrawer } from '@angular/material/sidenav';
 
@@ -14,7 +15,14 @@ export class AppComponent {
     this.update();
   }
 
-  constructor() {
+  public navigated: number = 0;
+
+  constructor(router: Router) {
+    router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        this.navigated++;
+      }
+    });
     this.update();
   }
 
