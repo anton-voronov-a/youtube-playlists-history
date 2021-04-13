@@ -12,10 +12,12 @@ export class AppComponent {
 
   @HostListener('window:resize', [])
   onResize() {
+    this.resized++;
     this.update();
   }
 
   public navigated: number = 0;
+  public resized: number = 0;
 
   constructor(router: Router) {
     router.events.subscribe((val) => {
