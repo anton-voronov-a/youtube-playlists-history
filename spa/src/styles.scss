@@ -77,10 +77,6 @@ app-root {
 }
 
 .yp-drawer-container--wide {
-  .yp-homepage-section {
-    animation: yp-navigation-content-start 1s forwards;
-    opacity: 0;
-  }
   /*when not yp-drawer-container--wide already has animation from drawer*/
   .yp-navigation-content {
     animation-duration: 1s;
@@ -93,7 +89,8 @@ app-root {
     }
 
     .yp-homepage-section {
-      animation-delay: 0.7s;
+      animation: yp-navigation-content-start 1s 0.7s forwards;
+      opacity: 0;
     }
 
     .yp-homepage-logo-char {
