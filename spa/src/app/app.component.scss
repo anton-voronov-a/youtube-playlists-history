@@ -25,7 +25,7 @@
 .yp-toolbar {
   z-index: 2;
   color: white;
-  background: linear-gradient(to right, rgb(106, 17, 203) 500px, rgb(37, 117, 252));
+  background: var(--yp-top-background);
   position: relative;
 }
 

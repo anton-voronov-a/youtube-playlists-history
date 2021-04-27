@@ -6,10 +6,9 @@
 </mat-toolbar>
 
 <mat-drawer-container class="yp-drawer-container"
-                      [hasBackdrop]="!isWide"
-                      [class.yp-drawer-container--wide]="isWide">
-  <mat-drawer [mode]="isWide? 'side': 'push'" #drawer
-              [opened]="isWide"
+                      [hasBackdrop]="true">
+  <mat-drawer [mode]="'push'" #drawer
+              [opened]="false"
               class="yp-drawer">
     <mat-nav-list (click)="tryToggle(drawer)">
       <a mat-list-item routerLink="/home"
@@ -18,16 +17,12 @@
         <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
         <span class="yp-nav-link__text">Home</span>
       </a>
-    </mat-nav-list>
-    <mat-nav-list (click)="tryToggle(drawer)">
       <a mat-list-item routerLink="/privacy-policy"
          routerLinkActive="yp-nav-link--active"
          class="yp-nav-link">
         <mat-icon aria-hidden="false" aria-label="Privacy policy icon">policy</mat-icon>
         <span class="yp-nav-link__text">Privacy policy</span>
       </a>
-    </mat-nav-list>
-    <mat-nav-list (click)="tryToggle(drawer)">
       <a mat-list-item routerLink="/docs"
          routerLinkActive="yp-nav-link--active"
          class="yp-nav-link">

@@ -13,7 +13,6 @@ export class AppComponent {
   @HostListener('window:resize', [])
   onResize() {
     this.resized++;
-    this.update();
   }
 
   public navigated: number = 0;
@@ -25,19 +24,9 @@ export class AppComponent {
         this.navigated++;
       }
     });
-    this.update();
-  }
-
-  public isWide!: boolean;
-
-  private update() {
-    this.isWide = window.innerWidth > 1500;
   }
 
   public tryToggle(nav: MatDrawer) {
-    if (!this.isWide) {
       nav.toggle(false);
-    }
   }
-
 }

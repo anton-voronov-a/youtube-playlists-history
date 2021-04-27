@@ -6,6 +6,8 @@
   --yp-link-color-secondary--hover: #dc40f7;
   --yp-app-title-font-family: Kavoon, "Helvetica Neue", sans-serif;
   --yp-nav-link-font-family: 'Engagement', "Helvetica Neue", sans-serif;
+  --yp-content-padding: 0 15px;
+  --yp-top-background: linear-gradient(to right, #6a11cb 500px, #2575fc 1920px);
 }
 
 html, body {
@@ -29,7 +31,7 @@ a {
 }
 
 .yp-navigation-content {
-  animation: yp-navigation-content-start 0s forwards;
+  animation: yp-navigation-content-start 0.4s forwards;
   opacity: 0;
 }
 
@@ -52,15 +54,6 @@ a {
   margin-top: 2em;
 }
 
-.yp-homepage-title {
-  font-family: "Kavoon";
-  color: #d17fe6;
-  font-size: 42px;
-  font-weight: normal;
-  line-height: 1em;
-  margin: 0.5em 0;
-  color: #7b79ea;
-}
 
 .yp-title {
   font-size: 32px;
@@ -77,45 +70,19 @@ a {
 
 .yp-content {
   margin-top: 40px;
-  padding: 0 15px;
+  padding: var(--yp-content-padding);
   max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
 
-.yp-content-screenshots .yp-content {
-  max-width: 540px;
+.yp-content-section {
+  padding: var(--yp-content-padding);
 }
 
-.yp-drawer-container--wide {
-  /*when not yp-drawer-container--wide already has animation from drawer*/
-  .yp-navigation-content {
-    animation-duration: 1s;
-  }
 
-  .yp-not-navigated {
-    /*when not yp-drawer-container--wide already has animation from drawer*/
-    .yp-navigation-content {
-      animation-duration: 0s;
-    }
-
-    .yp-homepage-section {
-      animation: yp-navigation-content-start 0.6s 0.6s forwards;
-      opacity: 0;
-    }
-
-    .yp-homepage-logo-char {
-      display: inline-block;
-      transform: scale(1) translateY(-15px) translateX(15px);
-      opacity: 0;
-    }
-
-    @for $i from 1 through 17 {
-      .yp-homepage-logo-char:nth-child(#{$i}) {
-        animation: char-start 0.2s #{$i*0.04}s forwards;
-      }
-    }
-  }
+.yp-content-screenshots .yp-content {
+  max-width: 540px;
 }
 
 .yp-app-title {
@@ -136,24 +103,6 @@ a {
 @media screen and (max-width:500px) {
   .yp-app-title {
     margin-left: 8px;
-  }
-}
-
-@media screen and (min-width:800px) {
-  .yp-homepage-title {
-    font-size: 94px;
-  }
-}
-
-@keyframes char-start {
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 
