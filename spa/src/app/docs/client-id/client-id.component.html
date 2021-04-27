@@ -1,0 +1,53 @@
+<div class="yp-navigator" [class.yp-navigator--empty]="showContents">
+  <a routerLink="/docs/client-id"
+     class="yp-navigator__title"
+     title="How the client ID has been created?">
+    How the client ID has been created?
+  </a>
+
+  <article class="yp-navigator__content">
+    <div class="yp-navigator_links">
+      <mat-nav-list class="yp-nested-nav-list" [class.yp-content]="showContents">
+        <a routerLink="./project"
+           mat-list-item
+           routerLinkActive="yp-nested-nav-link--active"
+           class="yp-nested-nav-link">
+          Create project
+        </a>
+        <a routerLink="./api"
+           mat-list-item
+           routerLinkActive="yp-nested-nav-link--active"
+           class="yp-nested-nav-link">
+          Enable APIs
+        </a>
+        <a routerLink="./consent-screen"
+           mat-list-item
+           routerLinkActive="yp-nested-nav-link--active"
+           class="yp-nested-nav-link ">
+          Create consent screen
+        </a>
+        <a routerLink="./credentials"
+           mat-list-item
+           routerLinkActive="yp-nested-nav-link--active"
+           class="yp-nested-nav-link">
+          Create credentials
+        </a>
+        <a routerLink="./extension"
+           mat-list-item
+           routerLinkActive="yp-nested-nav-link--active"
+           class="yp-nested-nav-link">
+          Update settings
+        </a>
+      </mat-nav-list>
+    </div>
+    <div class="yp-navigator__content__body yp-content-screenshots">
+
+      <router-outlet class="yp-navigator__router"> </router-outlet>
+
+    </div>
+  </article>
+
+</div>
+
+
+

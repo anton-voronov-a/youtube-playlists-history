@@ -27,6 +27,14 @@
         <span class="yp-nav-link__text">Privacy policy</span>
       </a>
     </mat-nav-list>
+    <mat-nav-list (click)="tryToggle(drawer)">
+      <a mat-list-item routerLink="/docs"
+         routerLinkActive="yp-nav-link--active"
+         class="yp-nav-link">
+        <mat-icon aria-hidden="false" aria-label="Privacy policy icon">notes</mat-icon>
+        <span class="yp-nav-link__text">Docs</span>
+      </a>
+    </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content class="yp-drawer-content"
                       [class.yp-not-navigated]="navigated === 1 && resized === 0">

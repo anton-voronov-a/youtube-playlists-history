@@ -1,6 +1,6 @@
 .yp-nav-link {
   color: var(--yp-link-color-secondary);
-  font-size: 30px;
+  font-size: 26px;
   font-family: var(--yp-nav-link-font-family);
 }
 
@@ -27,4 +27,8 @@
   color: white;
   background: linear-gradient(to right, rgb(106, 17, 203) 500px, rgb(37, 117, 252));
   position: relative;
+}
+
+.yp-drawer-content {
+  background-color: white;
 }

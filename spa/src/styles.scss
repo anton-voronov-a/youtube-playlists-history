@@ -1,7 +1,7 @@
 :root {
   --yp-link-color-primary: #846bec;
   --yp-link-color-primary--hover: #dd20ff;
-  --yp-link-color-secondary: #7a61dc;
+  --yp-link-color-secondary: #7b79ea;
   --yp-link-color-secondary--active: #d162e5;
   --yp-link-color-secondary--hover: #dc40f7;
   --yp-app-title-font-family: Kavoon, "Helvetica Neue", sans-serif;
@@ -24,6 +24,10 @@ app-root {
   flex-direction: column;
 }
 
+a {
+  text-underline-position: under;
+}
+
 .yp-navigation-content {
   animation: yp-navigation-content-start 0s forwards;
   opacity: 0;
@@ -40,10 +44,12 @@ app-root {
 }
 
 .yp-section {
-  line-height: 1.5em;
-  font-size: 20px;
+  width: 100%;
+  line-height: 1.7em;
+  font-size: 18px;
   font-family: Roboto, Arial,sans-serif;
-  color: #403266;
+  color: #3a1890;
+  margin-top: 2em;
 }
 
 .yp-homepage-title {
@@ -57,10 +63,9 @@ app-root {
 }
 
 .yp-title {
-  margin: 0.5em 0;
-  font-size: 35px;
+  font-size: 32px;
   font-weight: normal;
-  font-family: Merienda, Roboto, Arial, sans-serif;
+  /*font-family: Merienda, Roboto, Arial, sans-serif;*/
   color: #5939af;
 }
 
@@ -72,10 +77,14 @@ app-root {
 
 .yp-content {
   margin-top: 40px;
-  padding: 0 8px;
+  padding: 0 15px;
   max-width: 1200px;
   display: flex;
   flex-direction: column;
+}
+
+.yp-content-screenshots .yp-content {
+  max-width: 540px;
 }
 
 .yp-drawer-container--wide {
@@ -91,19 +100,19 @@ app-root {
     }
 
     .yp-homepage-section {
-      animation: yp-navigation-content-start 1s 0.7s forwards;
+      animation: yp-navigation-content-start 0.6s 0.6s forwards;
       opacity: 0;
     }
 
     .yp-homepage-logo-char {
       display: inline-block;
-      transform: scale(1) translateY(-30px) translateX(30px);
+      transform: scale(1) translateY(-15px) translateX(15px);
       opacity: 0;
     }
 
     @for $i from 1 through 17 {
       .yp-homepage-logo-char:nth-child(#{$i}) {
-        animation: char-start 1s #{$i*0.03}s forwards;
+        animation: char-start 0.2s #{$i*0.04}s forwards;
       }
     }
   }
@@ -134,17 +143,7 @@ app-root {
   .yp-homepage-title {
     font-size: 94px;
   }
-
-  .yp-section {
-    font-size: 23px;
-  }
 }
-
-.yp-homepage-logo-space {
-  width: 0.4em;
-  display: inline-block;
-}
-
 
 @keyframes char-start {
 
