@@ -1,7 +1,7 @@
 <mat-toolbar color="primary" class="mat-elevation-z4 yp-toolbar">
-  <button mat-icon-button (click)="drawer.toggle()" aria-label="Menu">
+  <!--<button mat-icon-button (click)="drawer.toggle()" aria-label="Menu">
     <mat-icon>menu</mat-icon>
-  </button>
+  </button>-->
   <span class="yp-app-title">Playlists history</span>
 </mat-toolbar>
 
@@ -17,18 +17,12 @@
         <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
         <span class="yp-nav-link__text">Home</span>
       </a>
-      <a mat-list-item routerLink="/privacy-policy"
-         routerLinkActive="yp-nav-link--active"
-         class="yp-nav-link">
-        <mat-icon aria-hidden="false" aria-label="Privacy policy icon">policy</mat-icon>
-        <span class="yp-nav-link__text">Privacy policy</span>
-      </a>
-      <a mat-list-item routerLink="/docs"
-         routerLinkActive="yp-nav-link--active"
-         class="yp-nav-link">
+      <!--<a mat-list-item routerLink="/docs"
+             routerLinkActive="yp-nav-link--active"
+             class="yp-nav-link">
         <mat-icon aria-hidden="false" aria-label="Privacy policy icon">notes</mat-icon>
         <span class="yp-nav-link__text">Docs</span>
-      </a>
+      </a>-->
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content class="yp-drawer-content"
@@ -36,3 +30,13 @@
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
+<footer>
+  <a href="assets/docs/privacy-policy/"
+     target="_blank"
+     title="Privacy policy"
+     class="yp-footer-link">Privacy policy</a>
+  <a href="assets/docs/terms/"
+     target="_blank"
+     title="Terms of Service"
+     class="yp-footer-link">Terms of Service</a>
+</footer>

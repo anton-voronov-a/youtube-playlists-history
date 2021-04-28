@@ -6,17 +6,7 @@
   --yp-link-color-secondary--hover: #dc40f7;
   --yp-app-title-font-family: Kavoon, "Helvetica Neue", sans-serif;
   --yp-nav-link-font-family: 'Engagement', "Helvetica Neue", sans-serif;
-  --yp-content-padding: 0 15px;
   --yp-top-background: linear-gradient(to right, #6a11cb 500px, #2575fc 1920px);
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 app-root {
@@ -26,41 +16,6 @@ app-root {
   flex-direction: column;
 }
 
-a {
-  text-underline-position: under;
-}
-
-.yp-navigation-content {
-  animation: yp-navigation-content-start 0.4s forwards;
-  opacity: 0;
-}
-
-@keyframes yp-navigation-content-start {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.yp-section {
-  width: 100%;
-  line-height: 1.7em;
-  font-size: 18px;
-  font-family: Roboto, Arial,sans-serif;
-  color: #3a1890;
-  margin-top: 2em;
-}
-
-
-.yp-title {
-  font-size: 32px;
-  font-weight: normal;
-  /*font-family: Merienda, Roboto, Arial, sans-serif;*/
-  color: #5939af;
-}
 
 .yp-drawer-container {
   flex: 1;
@@ -68,13 +23,6 @@ a {
   height: 100%;
 }
 
-.yp-content {
-  margin-top: 40px;
-  padding: var(--yp-content-padding);
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-}
 
 .yp-content-section {
   padding: var(--yp-content-padding);
@@ -103,16 +51,5 @@ a {
 @media screen and (max-width:500px) {
   .yp-app-title {
     margin-left: 8px;
-  }
-}
-
-
-@media screen and (min-width:1200px) {
-  .yp-section {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
   }
 }
