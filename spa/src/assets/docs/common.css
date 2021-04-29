@@ -73,7 +73,7 @@ footer {
 
 .yp-footer-link {
   margin: 15px;
-  color: #848484;
+  color: rgba(0,0,0,0.54);
   font-size: 12px;
   -ms-transition: color 0.4s;
   -o-transition: color 0.4s;
