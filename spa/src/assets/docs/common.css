@@ -46,11 +46,15 @@ a {
 .yp-section {
   width: 100%;
   line-height: 1.7em;
-  font-size: 18px;
+  font-size: 15px;
   font-family: Roboto, Arial,sans-serif;
-  color: #5f5f5f;
+  color: rgba(0, 0, 0, 0.64);
   margin: 2em 0;
 }
+
+  .yp-section b, .yp-section strong {
+    color: rgba(0, 0, 0, 0.90);
+  }
 
 @media screen and (min-width:1200px) {
   .yp-section {
@@ -64,19 +68,24 @@ a {
 
 footer {
   display: flex;
+  border-top: 1px solid rgb(0 0 0 / 12%);
+  -o-justify-content: center;
+  -webkit-justify-content: center;
   justify-content: center;
-  border-top: 1px solid #c7cffc;
   justify-content: center;
 }
 
 .yp-footer-link {
-  padding: 15px;
-  /*color: rgba(0,0,0,0.54);*/
+  margin: 8px;
   font-size: 12px;
-  -ms-transition: color 0.4s;
-  -o-transition: color 0.4s;
-  -webkit-transition: color 0.4s;
+  -ms-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
+  line-height: 36px;
+  padding: 0 16px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
 }
 
   .yp-footer-link:hover {
