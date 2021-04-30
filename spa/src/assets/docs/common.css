@@ -33,8 +33,6 @@ a {
 .yp-title {
   font-size: 32px;
   font-weight: normal;
-  /*font-family: Merienda, Roboto, Arial, sans-serif;*/
-  color: #5939af;
 }
 
 .yp-content {
@@ -51,7 +49,7 @@ a {
   font-size: 18px;
   font-family: Roboto, Arial,sans-serif;
   color: #5f5f5f;
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 @media screen and (min-width:1200px) {
@@ -72,15 +70,15 @@ footer {
 }
 
 .yp-footer-link {
-  margin: 15px;
-  color: rgba(0,0,0,0.54);
+  padding: 15px;
+  /*color: rgba(0,0,0,0.54);*/
   font-size: 12px;
   -ms-transition: color 0.4s;
   -o-transition: color 0.4s;
   -webkit-transition: color 0.4s;
-  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
 
-.yp-footer-link:hover {
-    color: #3e3d3d;
+  .yp-footer-link:hover {
+    background-color: rgb(0 0 0 / 9%);
   }

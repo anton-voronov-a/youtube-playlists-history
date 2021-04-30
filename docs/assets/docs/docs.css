@@ -22,7 +22,9 @@ footer {
   width: 100%;
 }
 
-.yp-docs-body main {
+.yp-main-docs {
   display: flex;
   justify-content: center;
+  overflow-y: auto;
+  flex-wrap: wrap;
 }
