@@ -28,6 +28,7 @@
             "aot": true,
             "assets": [
               "src/CNAME",
+              "src/sitemap.xml",
               "src/assets"
             ],
             "styles": [
