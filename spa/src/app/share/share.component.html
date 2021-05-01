@@ -1,0 +1,9 @@
+<mat-nav-list>
+  <ng-template ngFor let-link [ngForOf]="transformedLinks">
+    <a mat-list-item href="{{link.url}}"
+       target="_blank"
+       title="Share with {{link.name}}">
+      {{link.name}}
+    </a>
+  </ng-template>
+</mat-nav-list>

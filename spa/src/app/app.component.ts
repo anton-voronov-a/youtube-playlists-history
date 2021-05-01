@@ -2,6 +2,8 @@ import { Component, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from "@angular/router";
 
 import { MatDrawer } from '@angular/material/sidenav';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { ShareComponent } from "./share/share.component";
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,7 @@ export class AppComponent {
   public navigated: number = 0;
   public resized: number = 0;
 
-  constructor(router: Router) {
+  constructor(router: Router, private bottomSheet: MatBottomSheet) {
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         this.navigated++;
@@ -27,6 +29,12 @@ export class AppComponent {
   }
 
   public tryToggle(nav: MatDrawer) {
-      nav.toggle(false);
+    nav.toggle(false);
   }
+
+
+  public share(): void {
+    this.bottomSheet.open(ShareComponent);
+  }
+
 }
