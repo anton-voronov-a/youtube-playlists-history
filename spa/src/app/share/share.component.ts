@@ -59,6 +59,7 @@ export class ShareComponent {
     //{ url: 'https://bufferapp.com/add?text=[postTitle]&url=[postUrl]', name: 'Bufferapp' },
     { url: 'https://www.tumblr.com/share/link?url=[postUrl]&name=[postTitle]&description=[postDesc]', name: 'Tumblr' },
     { url: 'https://reddit.com/submit?url=[postUrl]&title=[postTitle]', name: 'Reddit' },// tested
+    { url: "https://telegram.me/share/url?url=[postUrl]&text=[postTitle]", name: 'Telegram' }
     //{ url: 'https://www.stumbleupon.com/submit?url=[postUrl]&title=[postTitle]', name: 'Stumbleupon' },
     //{ url: 'https://www.evernote.com/clip.action?url=[postUrl]&title=[postTitle]', name: 'Evernote' },
     //{ url: 'https://wordpress.com/press-this.php?u=[postUrl]&t=[postTitle]&s=[postDesc]&i=[postImg]', name: 'Wordpress' },
