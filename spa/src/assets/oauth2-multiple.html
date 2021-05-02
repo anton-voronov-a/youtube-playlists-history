@@ -9,9 +9,25 @@
   <h1 id="text"></h1>
   <script>
     (() => {
-      const redirectUrl = 'https://mapoanpgddcgdiecldjkkgoogapkjhcm.chromiumapp.org';
-      document.getElementById('text').innerHTML = `Redirect to ${redirectUrl}, href '${location.href}'`;
-      //location.href = `${redirectUrl}/${location.hash}`;
+
+      const hash = location.hash;
+      if (location.hash.length) {
+        const params = new URLSearchParams(hash.substring(1));
+        const extensionId = params.get("extension_id");
+        const knownExtensionIds = ['mapoanpgddcgdiecldjkkgoogapkjhcm'];
+
+        if (knownExtensionIds.indexOf(extensionId) > -1) {
+          const redirectUrl = `https://${extensionId}.chromiumapp.org`;
+          document.getElementById('text').innerHTML = `Redirect to ${redirectUrl}, extensionId '${extensionId}'`;
+          //location.href = `${redirectUrl}/${location.hash}`;
+        } else {
+          document.getElementById('text').innerHTML = `Can not redirect (extensionId '${extensionId}' is unknown).`;
+        }
+
+      } else {
+        document.getElementById('text').innerHTML = `Can not redirect (empty hash).`;
+      }
+
     })();
   </script>
 </body>
