@@ -10,17 +10,20 @@
   <script>
     (() => {
 
+      const knownExtensionIds = [
+        'mapoanpgddcgdiecldjkkgoogapkjhcm', /*chrome app store*/
+        'ahghalgfmafmfbfmamcaknfdopmbmlhk' /*local Chrome*/
+      ];
+
       const hash = location.hash;
       if (location.hash.length) {
         const params = new URLSearchParams(hash.substring(1));
         const extensionId = params.get("state");
 
-        const knownExtensionIds = ['mapoanpgddcgdiecldjkkgoogapkjhcm'];
-
         if (knownExtensionIds.indexOf(extensionId) > -1) {
           const redirectUrl = `https://${extensionId}.chromiumapp.org`;
           document.getElementById('text').innerHTML = `Redirect to ${redirectUrl}, extensionId '${extensionId}'`;
-          //location.href = `${redirectUrl}/${location.hash}`;
+          location.href = `${redirectUrl}/${location.hash}`;
         } else {
           document.getElementById('text').innerHTML = `Can not redirect (extensionId '${extensionId}' is unknown).`;
         }
