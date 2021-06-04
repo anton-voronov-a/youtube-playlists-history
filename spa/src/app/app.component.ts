@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { Router, NavigationEnd } from "@angular/router";
+//import { Router, NavigationEnd } from "@angular/router";
 
 import { MatDrawer } from '@angular/material/sidenav';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
@@ -20,12 +20,15 @@ export class AppComponent {
   public navigated: number = 0;
   public resized: number = 0;
 
-  constructor(router: Router, private bottomSheet: MatBottomSheet) {
-    router.events.subscribe((val) => {
-      if (val instanceof NavigationEnd) {
-        this.navigated++;
-      }
-    });
+
+  constructor(
+    //router: Router,
+    private bottomSheet: MatBottomSheet) {
+    //router.events.subscribe((val) => {
+    //  if (val instanceof NavigationEnd) {
+    //    this.navigated++;
+    //  }
+    //});
   }
 
   public tryToggle(nav: MatDrawer) {
