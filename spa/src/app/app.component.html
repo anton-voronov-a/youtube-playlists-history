@@ -11,8 +11,8 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
-
-<mat-drawer-container class="yp-drawer-container"
+<app-home></app-home>
+<!--<mat-drawer-container class="yp-drawer-container"
                       [hasBackdrop]="true">
   <mat-drawer [mode]="'push'" #drawer
               [opened]="false"
@@ -24,20 +24,20 @@
         <mat-icon aria-hidden="false" aria-label="Home icon">home</mat-icon>
         <span class="yp-nav-link__text">Home</span>
       </a>
-      <!--<a mat-list-item routerLink="/docs"
+      <a mat-list-item routerLink="/docs"
              routerLinkActive="yp-nav-link--active"
              class="yp-nav-link">
         <mat-icon aria-hidden="false" aria-label="Privacy policy icon">notes</mat-icon>
         <span class="yp-nav-link__text">Docs</span>
-      </a>-->
+      </a>
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content class="yp-drawer-content"
                       [class.yp-not-navigated]="navigated === 1 && resized === 0">
     <app-home></app-home>
-    <!--<router-outlet></router-outlet>-->
+    <router-outlet></router-outlet>
   </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container>-->
 <footer>
   <a href="assets/docs/privacy-policy/"
      title="Privacy policy"
