@@ -102,6 +102,11 @@
   transition: all 0.5s;
 }
 
+.yp-homepage-store:hover {
+  color: #000000;
+  background-position-x: left;
+}
+
 .yp-homepage-last-step {
   animation: yp-homepage-last-step 0s forwards;
 }
