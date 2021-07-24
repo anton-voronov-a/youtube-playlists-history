@@ -63,7 +63,7 @@ THE SOFTWARE.
 @angular/platform-browser
 MIT
 
-@fontsource/engagement
+@fontsource/bad-script
 MIT
 MIT License
 

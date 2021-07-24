@@ -11,19 +11,23 @@
       <a mat-raised-button
          href="https://microsoftedge.microsoft.com/addons/detail/playlists-history/plnfajoghhcbhnamddchcgkmmccehamj"
          target="_blank"
-         rel="noreferrer"
          class="yp-homepage-store"
-         title="Chrome Web Store">Edge Add-ons</a>
+         title="Edge Add-on">Edge Add-on</a>
       <a mat-raised-button
          href="https://chrome.google.com/webstore/detail/playlists-history/mapoanpgddcgdiecldjkkgoogapkjhcm"
          target="_blank"
-         rel="noreferrer"
          class="yp-homepage-store"
-         title="Chrome Web Store">Chrome Web Store</a>
+         title="Chrome extension">Chrome extension</a>
     </div>
   </div>
 </header>
 <div class="yp-homepage-section yp-homepage-last-step yp-content-section">
+  <button mat-icon-button
+          aria-label="Share"
+          title="share"
+          (click)="share()">
+    <mat-icon>share</mat-icon>
+  </button>
   <section>
     <ol class="yp-homepage-section__content">
       <li>
@@ -57,5 +61,11 @@
         </span>
       </li>
     </ol>
+    <div class="yp-links">
+      You can also group YouTube subscriptions using
+      <a href="https://www.groupsrating.com/"
+         target="_blank"
+         title="Channel groups and rating">Channel groups and rating</a>
+    </div>
   </section>
 </div>

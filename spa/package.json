@@ -25,9 +25,9 @@
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2",
-    "@fontsource/engagement": "4.2.3",
     "@fontsource/kavoon": "4.2.3",
-    "@fontsource/roboto": "4.2.2"
+    "@fontsource/roboto": "4.2.2",
+    "@fontsource/bad-script": "4.2.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1100.2",

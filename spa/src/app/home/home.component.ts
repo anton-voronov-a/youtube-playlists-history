@@ -1,14 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatBottomSheet } from "@angular/material/bottom-sheet";
+import { ShareComponent } from "../share/share.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  constructor() { }
+  constructor(
+    private bottomSheet: MatBottomSheet) {
+  }
 
-  ngOnInit(): void {
+  public share(): void {
+    this.bottomSheet.open(ShareComponent);
   }
 }
