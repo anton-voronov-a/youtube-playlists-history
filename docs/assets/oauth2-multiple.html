@@ -9,30 +9,30 @@
   <h1 id="text"></h1>
   <script>
     (() => {
-
       const knownExtensionIds = [
         'mapoanpgddcgdiecldjkkgoogapkjhcm', /*chrome app store*/
         'plnfajoghhcbhnamddchcgkmmccehamj', /*Edge Add-ons*/
-        'ahghalgfmafmfbfmamcaknfdopmbmlhk' /*local Chrome*/
+        'ahghalgfmafmfbfmamcaknfdopmbmlhk' /*local Chrome*/,
+        'cekklcedodbfcaihmhbdccficidpmknj'/*local Edge*/
       ];
 
       const hash = location.hash;
+
       if (location.hash.length) {
         const params = new URLSearchParams(hash.substring(1));
         const extensionId = params.get("state");
 
         if (knownExtensionIds.indexOf(extensionId) > -1) {
           const redirectUrl = `https://${extensionId}.chromiumapp.org`;
-          document.getElementById('text').innerHTML = `Redirect to ${redirectUrl}, extensionId '${extensionId}'`;
+          document.getElementById('text').textContent = `Redirect to ${redirectUrl}, extensionId '${extensionId}'`;
           location.href = `${redirectUrl}/${location.hash}`;
         } else {
-          document.getElementById('text').innerHTML = `Can not redirect (extensionId '${extensionId}' is unknown).`;
+          document.getElementById('text').textContent = `Can not redirect (extensionId '${extensionId}' is unknown).`;
         }
 
       } else {
-        document.getElementById('text').innerHTML = `Can not redirect (empty hash).`;
+        document.getElementById('text').textContent = `Can not redirect (empty hash).`;
       }
-
     })();
   </script>
 </body>
