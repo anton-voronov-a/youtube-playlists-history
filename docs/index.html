@@ -1,31 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Playlists history - a browser extension for YouTube</title>
+    <title>Playlists history</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Playlists history" />
+    <meta name="description" content="Playlists history is a browser extension for YouTube. Saves playlists history. Subscribes to a playlist. Reserve video thumbnails in max quality." />
+    <meta name="keywords" content="YouTube playlist history, Subscribe to playlist, Investigate deleted videos YouTube video thumbnails, Reserve YouTube thumbnails, Notify playlist changes, View playlist statistics" />
+    <link rel="canonical" href="https://playlistshistory.com/" />
+    <link rel="icon" type="image/png" href="/assets/icon-128.png">
+    
+    <link rel="preload" href="/kavoon-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: Kavoon;
+            font-style: normal;
+            font-display: swap;
+            font-weight: 400;
+            src: url("/kavoon-latin-400-normal.woff2") format("woff2"), url("/kavoon-latin-400-normal.woff") format("woff");
+        }
+    </style>
 
-  <meta name="viewport" content="width=420, initial-scale=1, minimum-scale=0.1, maximum-scale=10">
-  <link rel="icon" type="image/x-icon" href="assets/icon-128.png">
-  <meta name="description" content="Playlists history is a browser extension for YouTube. Saves playlists history. Subscribes to a playlist. Reserves video thumbnails in max quality.">
-
-  <link rel="canonical" href="https://playlistshistory.com/"/>
-  <meta property="og:type" content="product">
-  <meta property="og:title" content="Playlists history - a browser extension for YouTube">
-  <meta property="og:description" content="Playlists history is a browser extension for YouTube. Saves playlists history. Subscribes to a playlist. Reserve video thumbnails in max quality.">
-  <meta property="og:url" content="https://playlistshistory.com/">
-  <meta property="og:image" content="https://playlistshistory.com/assets/social/preview-og-1200-630.png">
-  <meta property="og:site_name" content="Playlists history">
-  <meta property="og:locale" content="en">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:image:src" content="https://playlistshistory.com/assets/social/preview-og-1200-630.png">
-
-  <link rel="preload" href="roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="kavoon-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="bad-script-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="MaterialIcons-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.90461818e92f29771a1d.css"></head>
+        <link rel="stylesheet" href="/assets/css/landing.css">
+        <link rel="stylesheet" href="/assets/css/common.css">
+    
+    <script type="application/ld&#x2B;json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "screenshot": "https://playlistshistory.com/assets/images/main/01-problem-02.png",
+      "author": {
+        "@type": "Person",
+        "name": "Anton Voronov",
+        "jobTitle": "Full-Stack Developer",
+        "sameAs": []
+      },
+      "name": "Playlists history",
+      "description": "Playlists history is a browser extension for YouTube. Saves playlists history. Subscribes to a playlist. Reserve video thumbnails in max quality.",
+      "applicationCategory": "Browser Extension",
+      "keywords": "YouTube playlist history, Subscribe to playlist, Investigate deleted videos YouTube video thumbnails, Reserve YouTube thumbnails, Notify playlist changes, View playlist statistics",
+      "featureList": [
+        "YouTube playlist history",
+        "Subscribe to playlist",
+        "Investigate deleted videos",
+        "YouTube video thumbnails",
+        "Reserve YouTube thumbnails",
+        "Notify playlist changes",
+        "View playlist statistics"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": 0,
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}
+    </script>
+</head>
 <body>
-  <app-root></app-root>
-<script src="runtime.0e49e2b53282f40c8925.js" defer></script><script src="polyfills.8c151b8375e767ff858f.js" defer></script><script src="main.54a04350f466a7dd4311.js" defer></script></body>
+    <header class="yp-homepage-header yp-content-section">
+        
+    
+<div class="yp-homepage-header__backgroud"></div>
+<h1 class="yp-homepage-title">
+    Playlists history
+</h1>
+<div class="yp-homepage-header-info">
+    <div class="yp-homepage-definition">
+        Browser Extension for YouTube users
+    </div>
+    <div class="cg-advice">
+        <div class="yp-homepage-stores">
+                <a href="https://microsoftedge.microsoft.com/addons/detail/playlists-history/plnfajoghhcbhnamddchcgkmmccehamj"
+                   class="yp-homepage-store"
+                   title="Edge Add-on">
+                    Edge Add-on
+                </a>
+                <a href="https://chrome.google.com/webstore/detail/playlists-history/mapoanpgddcgdiecldjkkgoogapkjhcm"
+                   class="yp-homepage-store"
+                   title="Chrome extension">
+                    Chrome extension
+                </a>
+        </div>
+    </div>
+</div>
+
+
+    </header>
+    <main role="main" class="cg-faq-main-docs yp-homepage-section yp-content-section">
+        
+<div class="yp-homepage-section__content">
+    <section>
+    <h2>
+        Features
+    </h2>
+    <ol>
+        <li>
+            Keeps track of changes of the YouTube playlists.
+            <div class="yp-homepage-capability-description">You can find out when a video was added or removed to a YouTube playlist.</div>
+        </li>
+        <li>
+            Subscribes to a specific playlist instead of the channel.
+            <p>New data comes in automatically, you can understand the changes by the extension icon. Changes are grouped by playlists.</p>
+        </li>
+        <li>
+            Shows max quality video thumbnails.
+            <div class="yp-homepage-capability-description">
+                While YouTube video creators can use high-quality images, we often see only small images in search results or on a recommendation list. Even going to the video, we often cannot see the image itself added by the author. This extension allows you to look at these high quality images in the generated playlist history.
+            </div>
+        </li>
+        <li>
+            Reserves thumbnails of deleted videos.
+            <div class="yp-homepage-capability-description">When someone deletes a video, you cannot see the associated images. This extension allows you to save the image before deleting it.</div>
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h2>
+        Related extensions
+    </h2>
+    <ol>
+        <li>
+            You can also group YouTube subscriptions using
+            <a href="https://www.groupsrating.com/"
+               rel="noopener"
+               target="_blank"
+               title="Channel groups and rating">Channel groups and rating</a>
+        </li>
+        <li>
+            And with the
+            <a href="https://page-context.a-voronov.space/"
+               rel="noopener"
+               target="_blank"
+               title="Page context">Page context</a>
+            extension, you can create visual and audio effects on any website or local page.
+        </li>
+    </ol>
+</section>
+</div>
+
+
+    </main>
+        <footer>
+                <a href="assets/docs/privacy-policy"
+                   title="Privacy policy"
+                   class="yp-footer-link">Privacy policy</a>
+                <a href="assets/docs/terms"
+                   title="Terms of Service"
+                   class="yp-footer-link">Terms of Service</a>
+        </footer>
+    <script>
+        (() => {
+            const knownUtmSources = new Set(['founder', 'vip', 'ext-cg']);
+            const knownUtmContentValues = new Set(['comments', 'equalizer']);
+            const knownFaqPaths = [];
+            const utmSourcesKey = 'utm_source';
+            const utmContentKey = 'utm_content';
+            const locationInfoJson = sessionStorage.getItem('locationKey');
+            let search, pathname;
+
+            if (locationInfoJson) {
+                const locationInfo = JSON.parse(locationInfoJson);
+
+                search = locationInfo.search;
+                pathname = locationInfo.pathname;
+            } else {
+                search = location.search;
+                pathname = location.pathname;
+            }
+
+            const searchParams = new URLSearchParams(search);
+            const validSearchParams = new URLSearchParams('utm_medium=referral');
+            const utmSource = searchParams.get(utmSourcesKey);
+            const utmContent = searchParams.get(utmContentKey);
+
+            if (knownUtmSources.has(utmSource)) {
+                validSearchParams.set(utmSourcesKey, utmSource);
+            } else {
+                validSearchParams.set(utmSourcesKey, location.hostname.replaceAll('.', '--'));
+            }
+
+            if (utmContent === null) {
+                const paths = (pathname || '').toLowerCase().split('/');
+                const faqPath = paths[2];
+
+                if (knownFaqPaths.includes(faqPath)) {
+                    validSearchParams.set(utmContentKey, faqPath);
+                }
+            } else if (knownUtmContentValues.has(utmContent)) {
+                validSearchParams.set(utmContentKey, utmContent);
+            }
+
+            const link = document.querySelector('a[href*="chromewebstore.google.com/"]');
+
+            if (!link) {
+                return;
+            }
+
+            link.search = validSearchParams.toString();
+        })();
+    </script>
+</body>
 </html>
